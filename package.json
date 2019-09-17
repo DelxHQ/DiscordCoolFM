@@ -1,0 +1,19 @@
+{
+  "name": "coolfm-bot",
+  "version": "1.0.0",
+  "description": "A Discord bot that plays CoolFM 24/7",
+  "main": "src/Bot.js",
+  "scripts": {
+    "start": "node src/Bot.js"
+  },
+  "author": "DelxHQ",
+  "license": "ISC",
+  "dependencies": {
+    "bufferutil": "^4.0.1",
+    "discord.js": "^11.5.1",
+    "libsodium-wrappers": "^0.7.4",
+    "node-opus": "^0.3.2",
+    "opusscript": "0.0.7",
+    "snekfetch": "^4.0.4"
+  }
+}
