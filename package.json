@@ -13,7 +13,6 @@
     "discord.js": "^11.5.1",
     "libsodium-wrappers": "^0.7.4",
     "node-opus": "^0.3.2",
-    "opusscript": "0.0.7",
     "snekfetch": "^4.0.4"
   }
 }
