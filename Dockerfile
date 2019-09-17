@@ -10,8 +10,6 @@ RUN apk add --no-cache \
 WORKDIR /bot
 COPY . /bot
 
-VOLUME ["/bot"]
-
 RUN npm i
 
 CMD [ "npm", "start" ]
