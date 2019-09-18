@@ -9,21 +9,18 @@ const API_URI = 'https://listenapi.planetradio.co.uk/api9/initdadi/cool-fm?stati
 const STREAM_URI = 'https://stream-al.planetradio.co.uk/coolfm.mp3?direct=true'
 
 let SONG_INFO = {
-  title: '',
-  image: '',
-  appleMusicUrl: ''
+  title,
+  image,
+  appleMusicUrl
 }
 
 setInterval(function () {
   fetchSongInfo()
+  client.user.setPresence({ game: { name: `${SONG_INFO.title}`, type: 'LISTENING' } })
 }, 30 * 1000)
 
 client.on('ready', () => {
   fetchSongInfo()
-
-  setInterval(function () {
-    client.user.setPresence({ game: { name: `${SONG_INFO.title}`, type: 'LISTENING' } })
-  }, 25 * 1000)
 })
 
 client.on('message', async message => {
