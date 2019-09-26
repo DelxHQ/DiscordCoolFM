@@ -5,7 +5,7 @@ const client = new Client({ disableEveryone: true })
 const fetch = require('snekfetch')
 
 const PREFIX = 'cool!'
-const API_URI = 'https://listenapi.planetradio.co.uk/api9/initdadi/cool-fm?stationRelated.StationType[]=radio&stationRelated.StationType[]=box%20set&stationBrandRelated.StationType[]=radio&stationBrandRelated.StationType[]=box%20set&include=stationStreams'
+const API_URI = 'https://listenapi.planetradio.co.uk/api9/initdadi/cool-fm'
 const STREAM_URI = 'https://stream-al.planetradio.co.uk/coolfm.mp3?direct=true'
 
 let SONG_INFO = {
